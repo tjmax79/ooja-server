@@ -21,9 +21,9 @@ app.use('/api/v1/auth', userRouter)
 app.use('/api/v1/products', productRoute)
 
 
+const PORT = 7788
 
-
-app.listen(7788,()=>{
+app.listen(PORT,()=>{
     console.log('server is running on port 7788')
 })
 mongoose.connect(process.env.MONGO_URL)
